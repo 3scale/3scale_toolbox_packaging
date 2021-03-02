@@ -32,4 +32,4 @@ deploy:
 before_script:
 - rm -rf pkg/*
 script:
-- "./${BUILD_ENGINE}.sh"
+- travis_wait 30 "./${BUILD_ENGINE}.sh"
